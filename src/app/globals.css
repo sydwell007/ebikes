@@ -1646,19 +1646,26 @@ h4 {
 
 .footGrid {
   display: grid;
-  grid-template-columns: 1.4fr repeat(3, 1fr);
+  grid-template-columns: 1.3fr 2fr;
+  gap: 32px;
+}
+
+.footLinkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
 @media (max-width: 900px) {
   .footGrid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
 @media (max-width: 560px) {
-  .footGrid {
-    grid-template-columns: 1fr;
+  .footLinkGrid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

@@ -24,16 +24,6 @@ export default function Home() {
     <>
       <HomeHero />
 
-      <div className="marquee" aria-label="Built for African commerce and logistics">
-        <div className="marqueeTrack">
-          {Array.from({ length: 2 }).flatMap((_, loop) =>
-            ["StreetShops", "Township Commerce", "Fleet Operators", "Municipalities", "Campuses", "Food Delivery", "Pharmacy Logistics"].map(
-              (item) => <span key={`${loop}-${item}`}>{item} <i aria-hidden="true" /></span>
-            )
-          )}
-        </div>
-      </div>
-
       <section id="problem">
         <div className="container">
           <SectionTitle title="Africa Needs Smarter Last-Mile Mobility" kicker="The Market Problem">
