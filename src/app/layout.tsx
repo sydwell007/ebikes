@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import MarqueeStrip from "@/components/layout/MarqueeStrip";
 import { siteDescription, siteName, siteTagline, siteUrl } from "@/data/siteConfig";
 import "./globals.css";
 
@@ -100,7 +99,6 @@ export default function RootLayout({
         <a className="skipLink" href="#main-content">
           Skip to content
         </a>
-        <MarqueeStrip />
         <Header />
         <main id="main-content">{children}</main>
         <Footer />

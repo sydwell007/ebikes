@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HomeHero from "@/components/marketing/HomeHero";
+import MarqueeStrip from "@/components/layout/MarqueeStrip";
 import Reveal from "@/components/motion/Reveal";
 import { IconBadge, SectionTitle } from "@/components/ui/Card";
 import { StatTile } from "@/components/ui/StatTile";
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     <>
       <HomeHero />
+      <MarqueeStrip />
 
       <section id="problem">
         <div className="container">
